@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3EB9EF331A37147A00A1FBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB9EF321A37147A00A1FBE9 /* AppDelegate.swift */; };
-		3EB9EF351A37147A00A1FBE9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EB9EF341A37147A00A1FBE9 /* GameScene.sks */; };
 		3EB9EF371A37147A00A1FBE9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB9EF361A37147A00A1FBE9 /* GameScene.swift */; };
 		3EB9EF391A37147A00A1FBE9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB9EF381A37147A00A1FBE9 /* GameViewController.swift */; };
 		3EB9EF3C1A37147A00A1FBE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB9EF3A1A37147A00A1FBE9 /* Main.storyboard */; };
 		3EB9EF3E1A37147A00A1FBE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB9EF3D1A37147A00A1FBE9 /* Images.xcassets */; };
 		3EB9EF411A37147A00A1FBE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB9EF3F1A37147A00A1FBE9 /* LaunchScreen.xib */; };
 		3EB9EF4D1A37147A00A1FBE9 /* BlurBloomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB9EF4C1A37147A00A1FBE9 /* BlurBloomTests.swift */; };
+		3EB9EF571A3714B600A1FBE9 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB9EF561A3714B600A1FBE9 /* ship.png */; };
+		3EB9EF591A371C8400A1FBE9 /* blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3EB9EF581A371C8400A1FBE9 /* blur.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,6 @@
 		3EB9EF2D1A37147A00A1FBE9 /* BlurBloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlurBloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB9EF311A37147A00A1FBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EB9EF321A37147A00A1FBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EB9EF341A37147A00A1FBE9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		3EB9EF361A37147A00A1FBE9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3EB9EF381A37147A00A1FBE9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3EB9EF3B1A37147A00A1FBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		3EB9EF461A37147A00A1FBE9 /* BlurBloomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlurBloomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB9EF4B1A37147A00A1FBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EB9EF4C1A37147A00A1FBE9 /* BlurBloomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurBloomTests.swift; sourceTree = "<group>"; };
+		3EB9EF561A3714B600A1FBE9 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		3EB9EF581A371C8400A1FBE9 /* blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = blur.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,8 @@
 		3EB9EF241A37147A00A1FBE9 = {
 			isa = PBXGroup;
 			children = (
+				3EB9EF581A371C8400A1FBE9 /* blur.fsh */,
+				3EB9EF561A3714B600A1FBE9 /* ship.png */,
 				3EB9EF2F1A37147A00A1FBE9 /* BlurBloom */,
 				3EB9EF491A37147A00A1FBE9 /* BlurBloomTests */,
 				3EB9EF2E1A37147A00A1FBE9 /* Products */,
@@ -82,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				3EB9EF321A37147A00A1FBE9 /* AppDelegate.swift */,
-				3EB9EF341A37147A00A1FBE9 /* GameScene.sks */,
 				3EB9EF361A37147A00A1FBE9 /* GameScene.swift */,
 				3EB9EF381A37147A00A1FBE9 /* GameViewController.swift */,
 				3EB9EF3A1A37147A00A1FBE9 /* Main.storyboard */,
@@ -199,8 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB9EF411A37147A00A1FBE9 /* LaunchScreen.xib in Resources */,
+				3EB9EF571A3714B600A1FBE9 /* ship.png in Resources */,
 				3EB9EF3E1A37147A00A1FBE9 /* Images.xcassets in Resources */,
-				3EB9EF351A37147A00A1FBE9 /* GameScene.sks in Resources */,
+				3EB9EF591A371C8400A1FBE9 /* blur.fsh in Resources */,
 				3EB9EF3C1A37147A00A1FBE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

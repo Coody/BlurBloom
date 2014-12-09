@@ -10,13 +10,30 @@ import SpriteKit
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
-        self.addChild(myLabel)
+        // original sprite
+        
+        let Originalsprite = SKSpriteNode(imageNamed: "ship")
+        let Originallocation = CGPoint(x:CGRectGetMidX(self.frame), y:(CGRectGetMidY(self.frame)+125))
+        Originalsprite.position = Originallocation
+        
+        self.addChild(Originalsprite)
+        
+        
+        
+        // sprite with shader
+        
+        let sprite = SKSpriteNode(imageNamed: "ship")
+        let location = CGPoint(x:CGRectGetMidX(self.frame), y:(CGRectGetMidY(self.frame)-125))
+        sprite.position = location
+        
+        let fragShader = SKShader(fileNamed: "blur")
+        sprite.shader = fragShader
+        
+        
+       
+        self.addChild(sprite)
+
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
